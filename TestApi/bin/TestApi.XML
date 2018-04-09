@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestApi</name>
+    </assembly>
+    <members>
+        <member name="M:TestApi.App_Start.SwaggerConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Static method called to register swagger into the service.
+            </summary>
+            <param name="config">Current server http feature object.</param>
+        </member>
+        <member name="M:TestApi.App_Start.UnityConfig.RegisterComponents(System.Web.Http.HttpConfiguration)">
+            <summary>
+            This method is used to regist container components.
+            </summary>
+            <param name="config">Instance of HttpConfiguration which is used by current service.</param>
+        </member>
+        <member name="M:TestApi.Controllers.EmployeeController.GetEmployeeByIdNumber(System.String)">
+            <summary>
+            根据员工身份证号码获取员工信息
+            </summary>
+            <param name="idNumber">身份证号码</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestApi.DataAccessor.EmOperationDataSource.GetEmployeeByIdNumber(System.String)">
+            <summary>
+            根据员工身份证号码获取员工信息
+            </summary>
+            <param name="idNumber">身份证号码</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestApi.Interface.IEmOperationDataSource.GetEmployeeByIdNumber(System.String)">
+            <summary>
+            根据员工身份证号码获取员工信息
+            </summary>
+            <param name="idNumber">身份证号码</param>
+            <returns></returns>
+        </member>
+        <member name="T:TestApi.Interface.IEmOperationInterface">
+            <summary>
+            员工操作
+            </summary>
+        </member>
+        <member name="M:TestApi.Interface.IEmOperationInterface.GetEmployeeByIdNumber(System.String)">
+            <summary>
+            根据员工身份证号码获取员工信息
+            </summary>
+            <param name="idNumber">身份证号码</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestApi.Logic.EmOperationLogic.GetEmployeeByIdNumber(System.String)">
+            <summary>
+            根据员工身份证号码获取员工信息
+            </summary>
+            <param name="idNumber">身份证号码</param>
+            <returns></returns>
+        </member>
+        <member name="T:TestApi.Models.EM_EMPLOYEE">
+            <summary>
+            员工信息
+            </summary>
+        </member>
+        <member name="P:TestApi.Models.EM_EMPLOYEE.EMPLOYEEID">
+            <summary>
+            员工Id
+            </summary>
+        </member>
+        <member name="P:TestApi.Models.EM_EMPLOYEE.EMPLOYEECODE">
+            <summary>
+            员工编码
+            </summary>
+        </member>
+        <member name="P:TestApi.Models.EM_EMPLOYEE.REALNAME">
+            <summary>
+            员工姓名
+            </summary>
+        </member>
+        <member name="P:TestApi.Models.EM_EMPLOYEE.IDTYPE">
+            <summary>
+            证件类型
+            </summary>
+        </member>
+        <member name="P:TestApi.Models.EM_EMPLOYEE.IDNUMBER">
+            <summary>
+            证件号码
+            </summary>
+        </member>
+        <member name="P:TestApi.Models.EM_EMPLOYEE.MOBILEPHONE">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:TestApi.Models.EM_EMPLOYEE.ISDELETE">
+            <summary>
+            是否删除  0未删除   1已删除
+            </summary>
+        </member>
+        <member name="P:TestApi.Models.EM_EMPLOYEE.ISLEVEL">
+            <summary>
+            是否离职 0未离职,1已离职
+            </summary>
+        </member>
+        <member name="P:TestApi.Models.EM_EMPLOYEE.ADDTIME">
+            <summary>
+            添加时间
+            </summary>
+        </member>
+        <member name="P:TestApi.Models.EM_EMPLOYEE.STSTUS">
+            <summary>
+            1入职完成，2入职提交，3入职办理中，4离职办理中，5已离职
+            </summary>
+        </member>
+        <member name="P:TestApi.Models.EM_EMPLOYEE.BUSINESS">
+            <summary>
+            服务项
+            </summary>
+        </member>
+        <member name="P:TestApi.Models.EM_EMPLOYEE.ADDUSERID">
+            <summary>
+            添加人Id
+            </summary>
+        </member>
+        <member name="T:TestApi.Models.TestApiModel">
+            <summary>
+            EF 根据数据库中已有表生成
+            </summary>
+        </member>
+    </members>
+</doc>
